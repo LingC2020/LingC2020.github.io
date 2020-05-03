@@ -3,12 +3,9 @@
 * { margin: 0; padding: 0; }
 
 body {
-  font: 16px 'Playfair Display', serif;;
+  font: 'Playfair Display', serif;
+  font-weight: 500;
   line-height: 24px;
-}
-
-.clear {
-  clear: both;
 }
 
 #page-wrap {
@@ -17,7 +14,15 @@ body {
 }
 
 header {
-  border-bottom: 1px solid #999;
+  text-align: center;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:visited {
+  color:black;
 }
 
 h1 {
@@ -35,21 +40,19 @@ header p {
   border-right: 1px solid #999;
 }
 
-#pic {
-  list-style-type: 
-}
 
 nav {
-  padding-left: 30px;
+  border-bottom: 1px solid #999;
+  text-align: center;
 }
 
-nav li {
-  background-color: #fff;
-  list-style: none;
+nav li{
   display: inline-block;
+  list-style: none;
+  list-style-position: inside;
   line-height: 100px;
 }
-nav li a {
+nav li a{
   text-decoration: none;
   padding: 10px 15px;
   border: 2px solid #222;
@@ -61,12 +64,23 @@ nav li a:visited {
   color: rgb(88,40,130);
 }
 nav li a:hover {
-  background-color: #eee;
+  background-color: gray;
+}
+
+#sublist {
+    text-align: center;
+}
+
+#sublist li {
+  display:inline-grid;
+  list-style: none;
+  padding: 10px 15px;
 }
 
 section {
   display: grid;
   grid-template-columns: 225px 575px;
+  grid-gap: 10px;
 }
 
 h2 {
@@ -81,7 +95,7 @@ h2 span {
   bottom: 0;
   right: 0;
   font-style: italic;
-  font-family: Georgia, Serif;
+  font-family: 'Georgia', Serif;
   font-size: 16px;
   font-weight: normal;
 }
@@ -101,20 +115,23 @@ main a:hover {
 }
 
 div,ul {
-  grid-column: 2/3
+  grid-column: 2/3;
   margin: 0 0 32px 17px;
 }
 
-div.clear {
-  float: none;
-  margin: 0;
-  height: 30px;
+section {
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 footer {
-  padding-left: 350px;
+  display: grid;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: left;
   font-family: Georgia, Serif;
   background-color: #eee;
+}
+#returntotop {
+  text-align: center;
 }
